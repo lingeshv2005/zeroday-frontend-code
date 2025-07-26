@@ -41,7 +41,7 @@ const AddLostFoundForm = () => {
   const uploadImagesToCloudinary = async () => {
     const uploadedUrls = [];
 
-    const sigRes = await axios.get('https://zeroday-backend-code.onrender.com/signature');
+    const sigRes = await axios.get('https://zeroday-backend-code.onrender.com/api/signature');
     const { signature, timestamp, folder, api_key, cloud_name } = sigRes.data;
 
     for (const file of files) {
